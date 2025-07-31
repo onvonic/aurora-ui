@@ -335,9 +335,10 @@
     --onv-warning: var(--onv-color-yellow-400);      
     --onv-info: var(--onv-color-cyan-400);           
     --onv-danger: var(--onv-color-red-700);         
-    --onv-dark: var(--onv-color-gray-800);           
-    --onv-light: var(--onv-color-neutral-50);       
+    --onv-dark: #000000;           
+    --onv-light: #ffffff;       
 
+    --onv-soft-thema: #1d4ed869;
     --onv-soft-primary: color-mix(in srgb, var(--onv-color-blue-700) 25%, transparent);
     --onv-soft-secondary: color-mix(in srgb, var(--onv-color-slate-600) 25%, transparent);
     --onv-soft-success: color-mix(in srgb, var(--onv-color-green-700) 25%, transparent);
@@ -347,16 +348,17 @@
     --onv-soft-dark: color-mix(in srgb, var(--onv-color-gray-800) 25%, transparent);
 }
 
-/* Dark Mode Variables - Menggunakan Master Palette */
 :root {
-    --onv-dark-bg: var(--onv-color-neutral-950);
-    --onv-dark-bg-secondary: var(--onv-color-neutral-900);
+    --onv-dark-bg: #19191c;
+    --onv-dark-bg-secondary: #27272a;
     
-    --onv-dark-text: var(--onv-color-neutral-50);
-    --onv-dark-text-secondary: var(--onv-color-neutral-400);
+    --onv-dark-text: #000000;
+    --onv-dark-text-secondary: #a6a6a3;
+    --onv-dark-text-tertiary: #dadada;
     
-    --onv-dark-border: var(--onv-color-neutral-700);
-    --onv-dark-border-secondary: var(--onv-color-gray-300);
+    --onv-dark-border: #000000;
+    --onv-dark-border-secondary: #313030;
+    --onv-dark-border-tertiary: #dadada;
     
     /* Dark Mode Soft Colors */
     --onv-dark-soft-primary: color-mix(in srgb, var(--onv-primary) 10%, transparent);
