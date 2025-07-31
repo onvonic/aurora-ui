@@ -328,7 +328,7 @@
 
 :root {
     /* Primary Theme Colors - Menggunakan Master Palette */
-    --onv-thema: var(--onv-color-purple-700);      
+    --onv-thema: #292961;      
     --onv-primary: var(--onv-color-blue-700);       
     --onv-secondary: var(--onv-color-slate-600);     
     --onv-success: var(--onv-color-green-700);       
@@ -351,13 +351,12 @@
 :root {
     --onv-dark-bg: var(--onv-color-neutral-950);
     --onv-dark-bg-secondary: var(--onv-color-neutral-900);
-    --onv-dark-bg-tertiary: var(--onv-color-neutral-800);
     
     --onv-dark-text: var(--onv-color-neutral-50);
     --onv-dark-text-secondary: var(--onv-color-neutral-400);
     
     --onv-dark-border: var(--onv-color-neutral-700);
-    --onv-dark-border-secondary: var(--onv-color-neutral-600);
+    --onv-dark-border-secondary: var(--onv-color-gray-300);
     
     /* Dark Mode Soft Colors */
     --onv-dark-soft-primary: color-mix(in srgb, var(--onv-primary) 10%, transparent);
