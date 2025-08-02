@@ -18,7 +18,7 @@ ONV Table Components Library
 }
 
 .onv-table > :not(caption) > * > * {
-    padding: 0.75rem;
+    padding: 0.5rem;
     background-color: var(--onv-light);
     border-bottom-width: 1px;
     border-bottom-style: solid;
@@ -571,15 +571,15 @@ ONV Table Components Library
 }
 
 .onv-dark-mode .onv-table > :not(caption) > * > * {
-    background-color: var(--onv-dark-bg);
+    background-color: var(--onv-dark-bg-secondary);
     border-bottom-color: var(--onv-dark-border);
-    color: var(--onv-dark-text);
+     color: var(--onv-dark-text-secondary);
 }
 
 .onv-dark-mode .onv-table > thead > tr > th {
-    background-color: var(--onv-dark-bg-tertiary);
-    border-bottom-color: var(--onv-dark-border);
-    color: var(--onv-dark-text);
+    background-color: var(--onv-dark-bg);
+    border-bottom-color: var(--onv-dark-border-tertiary);
+    color: var(--onv-dark-text-secondary);
 }
 
 .onv-dark-mode .onv-table > caption {
@@ -605,7 +605,7 @@ ONV Table Components Library
 }
 
 .onv-dark-mode .onv-table-bordered > :not(caption) > * > * {
-    border-right-color: var(--onv-dark-border);
+    border-right-color: var(--onv-dark-border-tertiary);
 }
 
 .onv-dark-mode .onv-table-clean > thead > tr > th {

@@ -793,13 +793,13 @@
 
 /* BUTTON SIZE */
 .onv-btn-xm {
-    padding: 4px 8px;
-    font-size: 10px;
+    padding: 3px 5px;
+    font-size: 0.675rem;
 }
 
 .onv-btn-sm {
-    padding: 6px 12px;
-    font-size: 12px;
+    padding: 5px 8px;
+    font-size: 0.875rem;
 }
 
 .onv-btn-md {

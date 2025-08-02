@@ -295,34 +295,6 @@ ONV Typography Components Library
     line-height: 1.6 !important;
 }
 
-/* TABLE COMPONENTS */
-
-.onv-table {
-    width: 100% !important;
-    border-collapse: collapse !important;
-    margin-bottom: 1rem !important;
-}
-
-.onv-table th {
-    font-weight: 600 !important;
-    text-align: left !important;
-    padding: 0.75rem !important;
-    border-bottom: 2px solid var(--onv-border-color, #e5e7eb) !important;
-    background-color: var(--onv-soft-secondary) !important;
-    color: var(--onv-dark) !important;
-}
-
-.onv-table td {
-    padding: 0.75rem !important;
-    border-bottom: 1px solid var(--onv-border-color, #e5e7eb) !important;
-    color: var(--onv-dark) !important;
-    line-height: 1.5 !important;
-}
-
-.onv-table tr:hover {
-    background-color: var(--onv-soft-light) !important;
-}
-
 /* DISPLAY COMPONENTS */
 
 .onv-display-1 {
@@ -410,32 +382,6 @@ ONV Typography Components Library
 .onv-dark-mode .onv-subtitle2,
 .onv-dark-mode .onv-text-muted {
     color: var(--onv-dark-text-secondary) !important;
-}
-
-.onv-dark-mode .onv-table th {
-    background-color: var(--onv-dark-bg-tertiary) !important;
-    border-color: var(--onv-dark-border) !important;
-    color: var(--onv-dark-text) !important;
-}
-
-.onv-dark-mode .onv-table td {
-    border-color: var(--onv-dark-border) !important;
-    color: var(--onv-dark-text) !important;
-}
-
-.onv-dark-mode .onv-table tr:hover {
-    background-color: var(--onv-dark-bg-secondary) !important;
-}
-
-.onv-dark-mode .onv-code {
-    background-color: var(--onv-dark-bg-tertiary) !important;
-    border-color: var(--onv-dark-border) !important;
-    color: var(--onv-danger) !important;
-}
-
-.onv-dark-mode .onv-pre {
-    background-color: var(--onv-dark-bg-tertiary) !important;
-    color: var(--onv-dark-text) !important;
 }
 
 .onv-dark-mode .onv-kbd {

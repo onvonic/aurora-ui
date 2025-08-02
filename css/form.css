@@ -1,7 +1,3 @@
-/* 
-ONV Form Components Library 
-*/
-
 /* ========================================================================================== */
 /* ONV Form Components Library */
 /* ========================================================================================== */
@@ -40,7 +36,7 @@ ONV Form Components Library
 
 .onv-form-input {
     display: block;
-    width: 100%;
+    width: auto;
     padding: 0.625rem 0.875rem;
     font-size: 1rem;
     font-weight: 400;
@@ -68,7 +64,7 @@ ONV Form Components Library
 
 .onv-form-textarea {
     display: block;
-    width: 100%;
+    width: auto;
     padding: 0.625rem 0.875rem;
     font-size: 1rem;
     font-weight: 400;
@@ -95,24 +91,29 @@ ONV Form Components Library
 }
 
 /* SELECT */
-
 .onv-form-select {
-    display: block;
-    width: 100%;
+    display: inline-block; /* ubah ke inline-block */
+    width: auto;
     padding: 0.625rem 2.5rem 0.625rem 0.875rem;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     color: var(--onv-dark);
     background-color: var(--onv-light);
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e"); /* tambahin icon */
     background-position: right 0.75rem center;
     background-repeat: no-repeat;
     background-size: 1rem;
     border: 1px solid var(--onv-border-color, #d1d5db);
     border-radius: 0.375rem;
-    appearance: none;
+    appearance: none; /* tambahin ini */
+    -webkit-appearance: none; /* tambahin ini */
+    -moz-appearance: none; /* tambahin ini */
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.onv-form-select.onv-form-input-sm {
+    padding: 0.375rem 1.75rem 0.375rem 0.75rem !important;
 }
 
 .onv-form-select:focus {
@@ -401,12 +402,12 @@ ONV Form Components Library
     border-radius: 0 0.375rem 0.375rem 0;
 }
 
-.onv-input-group-prepend + .onv-form-input {
+.onv-input-group-prepend+.onv-form-input {
     border-left: 0;
     border-radius: 0 0.375rem 0.375rem 0;
 }
 
-.onv-input-group .onv-form-input + .onv-input-group-append {
+.onv-input-group .onv-form-input+.onv-input-group-append {
     border-left: 0;
 }
 
@@ -443,12 +444,12 @@ ONV Form Components Library
     color: var(--onv-secondary);
 }
 
-.onv-form-floating .onv-form-input:focus ~ label,
-.onv-form-floating .onv-form-input:not(:placeholder-shown) ~ label,
-.onv-form-floating .onv-form-textarea:focus ~ label,
-.onv-form-floating .onv-form-textarea:not(:placeholder-shown) ~ label,
-.onv-form-floating .onv-form-select:focus ~ label,
-.onv-form-floating .onv-form-select:not([value=""]) ~ label {
+.onv-form-floating .onv-form-input:focus~label,
+.onv-form-floating .onv-form-input:not(:placeholder-shown)~label,
+.onv-form-floating .onv-form-textarea:focus~label,
+.onv-form-floating .onv-form-textarea:not(:placeholder-shown)~label,
+.onv-form-floating .onv-form-select:focus~label,
+.onv-form-floating .onv-form-select:not([value=""])~label {
     opacity: 0.65;
     transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
     color: var(--onv-primary);
@@ -471,6 +472,7 @@ ONV Form Components Library
 
 .onv-form-select-sm {
     padding-right: 2rem;
+    width: auto;
 }
 
 /* Large */
@@ -547,9 +549,9 @@ ONV Form Components Library
     cursor: not-allowed;
 }
 
-.onv-form-checkbox:disabled + .onv-form-checkbox-label,
-.onv-form-radio:disabled + .onv-form-radio-label,
-.onv-form-switch:disabled + .onv-form-switch-label {
+.onv-form-checkbox:disabled+.onv-form-checkbox-label,
+.onv-form-radio:disabled+.onv-form-radio-label,
+.onv-form-switch:disabled+.onv-form-switch-label {
     opacity: 0.6;
     cursor: not-allowed;
 }
@@ -587,40 +589,42 @@ ONV Form Components Library
     text-align: right;
 }
 
-/* FORM GRID */
+/* FORM INPUT WRAPPER ICON */
 
-.onv-form-row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -0.75rem;
-    margin-right: -0.75rem;
+.onv-input-wrapper-icon-left {
+    position: relative;
+    display: inline-block;
 }
 
-.onv-form-col {
-    flex: 1 0 0%;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+.onv-input-wrapper-icon-left input {
+    padding-right: 35px !important;
 }
 
-.onv-form-col-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+.onv-input-wrapper-icon-left .onv-form-input-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6b7280;
+    pointer-events: none;
 }
 
-.onv-form-col-4 {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+.onv-input-wrapper-icon-right {
+    position: relative;
+    display: inline-block;
 }
 
-.onv-form-col-3 {
-    flex: 0 0 25%;
-    max-width: 25%;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+.onv-input-wrapper-icon-right input {
+    padding-left: 35px !important;
+}
+
+.onv-input-wrapper-icon-right .onv-form-input-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6b7280;
+    pointer-events: none;
 }
 
 /* HELP TEXT */
@@ -709,22 +713,22 @@ ONV Form Components Library
         grid-template-columns: 1fr;
         gap: 0.5rem;
     }
-    
+
     .onv-form-horizontal .onv-form-label {
         text-align: left;
         margin-bottom: 0.5rem;
     }
-    
+
     .onv-form-inline {
         flex-direction: column;
         align-items: stretch;
     }
-    
+
     .onv-form-row {
         margin-left: 0;
         margin-right: 0;
     }
-    
+
     .onv-form-col,
     .onv-form-col-6,
     .onv-form-col-4,
