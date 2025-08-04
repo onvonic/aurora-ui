@@ -129,7 +129,7 @@
 .onv-alert-border-left {
     border: none;
     border-left: 4px solid;
-    border-radius: 0 8px 8px 0;
+    border-radius: 8px 8px 8px 8px;
     padding: 16px 20px;
     background-color: #f8f9fa;
 }
