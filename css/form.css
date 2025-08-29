@@ -434,13 +434,13 @@
     top: 0;
     left: 0;
     height: 100%;
-    padding: 1rem 0.75rem;
+    padding: 0.5rem 0.75rem;
     pointer-events: none;
     border: 1px solid transparent;
     transform-origin: 0 0;
     transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
     margin-bottom: 0;
-    font-size: 1rem;
+    font-size: 0.875rem;
     color: var(--onv-secondary);
 }
 
@@ -450,8 +450,8 @@
 .onv-form-floating .onv-form-textarea:not(:placeholder-shown)~label,
 .onv-form-floating .onv-form-select:focus~label,
 .onv-form-floating .onv-form-select:not([value=""])~label {
-    opacity: 0.65;
-    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+    opacity: 0.9;
+    transform: scale(0.9) translateY(-0.5rem) translateX(0.15rem);
     color: var(--onv-primary);
 }
 
