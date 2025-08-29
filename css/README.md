@@ -1,2 +1,2 @@
 # aurora-ui
-# by rsng
+# by rs
