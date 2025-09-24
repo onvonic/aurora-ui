@@ -578,14 +578,13 @@
 
 .onv-form-horizontal .onv-form-group {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 5fr;
     gap: 1rem;
     align-items: center;
 }
 
 .onv-form-horizontal .onv-form-label {
     margin-bottom: 0;
-    text-align: right;
 }
 
 /* FORM INPUT WRAPPER ICON */
